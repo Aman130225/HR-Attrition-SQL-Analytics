@@ -48,7 +48,12 @@ The project follows a professional analytics workflow:
 
 ---
 
-## 🛠️ How to Run the Project
+## 🛠️ How to Run the Project## 📥 Dataset
+This repository does not include the raw CSV file (to keep the repo lightweight).
+Download the IBM HR Attrition dataset and place it here:
+
+`data/raw/hr_attrition_raw.csv`
+
 
 ```bash
 mysql -u root -p < sql/00_schema/create_raw.sql
