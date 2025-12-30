@@ -1,12 +1,16 @@
--- 00_schema/create_raw.sql
-CREATE DATABASE IF NOT EXISTS hr_attrition;
+-- 01_raw.sql
+-- Create raw table + load CSV into MySQL
+
 USE hr_attrition;
+
+SET GLOBAL local_infile = 1;
+SHOW VARIABLES LIKE 'local_infile';
 
 DROP TABLE IF EXISTS raw_hr_attrition;
 
 CREATE TABLE raw_hr_attrition (
   Age INT,
-  Attrition VARCHAR(10),
+  Attrition VARCHAR(5),
   BusinessTravel VARCHAR(50),
   DailyRate INT,
   Department VARCHAR(50),
@@ -26,8 +30,7 @@ CREATE TABLE raw_hr_attrition (
   MonthlyIncome INT,
   MonthlyRate INT,
   NumCompaniesWorked INT,
-  Over18 VARCHAR(5),
-  OverTime VARCHAR(10),
+  OverTime VARCHAR(5),
   PercentSalaryHike INT,
   PerformanceRating INT,
   RelationshipSatisfaction INT,
@@ -42,4 +45,11 @@ CREATE TABLE raw_hr_attrition (
   YearsWithCurrManager INT
 );
 
+LOAD DATA LOCAL INFILE '/Users/amanjotkaur/Desktop/HR_Attrition_SQL_Project/data/HR_Attrition.csv'
+INTO TABLE raw_hr_attrition
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES;
 
+SELECT COUNT(*) AS total_rows FROM raw_hr_attrition;
