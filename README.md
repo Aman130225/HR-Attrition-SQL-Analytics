@@ -6,7 +6,7 @@ This project explores employee attrition using SQL and Power BI with the goal of
 
 I built the complete analytics pipeline myself — starting from raw HR data, cleaning and transforming it in SQL, designing a proper data model, calculating business KPIs, and finally creating an interactive executive dashboard in Power BI.
 
-This project simulates the real workflow of a data analyst working with HR teams.
+I wanted this project to reflect the real workflow of a data analyst supporting HR teams with data-driven decisions.
 
 ---
 
@@ -23,6 +23,6 @@ This project simulates the real workflow of a data analyst working with HR teams
 
 ## 🏗️ Data Pipeline Design
 
-The project follows a structured analytics flow:
+Each layer was designed deliberately so that business questions could be answered cleanly and reliably, similar to how data pipelines are structured in real analytics teams.
 
 **Raw Data → Cleaning & Feature Engineering → Dimensional Modeling → KPI Analysis**
