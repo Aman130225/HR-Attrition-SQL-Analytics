@@ -79,6 +79,37 @@ The analysis highlights critical areas for intervention:
 These insights provide HR leaders with a data-driven foundation for strategic workforce planning.
 
 
+---
+
+## 🧠 Business Recommendations
+
+Based on the analysis and key findings, the following actions are recommended to reduce employee attrition and improve retention:
+
+### 1️⃣ Reduce Overtime Pressure
+Employees working overtime show nearly **3× higher attrition** compared to those who do not.
+- Introduce workload balancing and realistic project planning.
+- Monitor departments with consistently high overtime usage.
+- Encourage healthy work–life balance through policy changes.
+
+### 2️⃣ Strengthen Sales Team Retention
+Sales, especially **Sales Representatives**, experience the highest turnover.
+- Review performance targets and incentive structures.
+- Provide additional coaching and career progression opportunities.
+- Improve manager support and feedback cycles.
+
+### 3️⃣ Improve Onboarding for New Employees
+Attrition is highest among employees with **0–1 year tenure**.
+- Enhance onboarding programs and mentorship initiatives.
+- Schedule regular check-ins during the first year of employment.
+- Provide clear career paths and growth expectations early.
+
+### 4️⃣ Use Predictive Monitoring
+Develop early-warning indicators using:
+- Overtime trends  
+- Job satisfaction metrics  
+- Tenure patterns  
+
+This allows HR teams to proactively intervene before employees decide to leave.
 ## ✅ What These Results Suggest
 - Attrition is concentrated in **Sales**, especially **Sales Representatives**.
 - **Overtime** is a major risk factor (attrition is ~3x higher vs no overtime).
