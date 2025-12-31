@@ -46,26 +46,25 @@ CSV is stored here: [`data/HR_Attrition.csv`](data/HR_Attrition.csv)
 
 ---
 
-## 📊 Key Results & Business Findings
-
+## 📊 Key Results
 | Metric | Result |
-|------|------|
-| Overall Attrition Rate | 16.12% |
-| Highest-Risk Department | Sales (20.63%) |
-| Highest-Risk Job Role | Sales Representative (39.76%) |
-| Attrition with Overtime | 30.53% |
-| Attrition without Overtime | 10.44% |
-| Highest-Risk Tenure Group | 0–1 years (34.88%) |
+|------|------:|
+| Overall Attrition Rate | **16.12%** |
+| Highest-Risk Department | **Sales (20.63%)** |
+| Highest-Risk Job Role | **Sales Representative (39.76%)** |
+| Attrition with Overtime | **30.53%** |
+| Attrition without Overtime | **10.44%** |
+| Highest-Risk Tenure Group | **0–1 years (34.88%)** |
 
-### What This Means
 
-- Employee turnover is heavily concentrated in Sales, especially Sales Representatives.
-- Overtime is a major risk factor and triples the likelihood of attrition.
-- New hires are the most vulnerable group and require better onboarding and support.
+## ✅ What These Results Suggest
+- Attrition is concentrated in **Sales**, especially **Sales Representatives**.
+- **Overtime** is a major risk factor (attrition is ~3x higher vs no overtime).
+- The most vulnerable employees are **new hires (0–1 years)** → onboarding and early support likely matter a lot.
 
 ---
 
-## 📊 Executive Dashboard
+## 📊  Power BI Dashboard (Screenshots)
 
 ### Executive Overview
 ![Executive Overview](powerbi/screenshots/executive_overview.png)
@@ -86,12 +85,23 @@ CSV is stored here: [`data/HR_Attrition.csv`](data/HR_Attrition.csv)
 
 ---
 
-## 📁 Project Structure
-
-data/ → Raw dataset
-sql/ → SQL transformation layers
-powerbi/ → Dashboard and screenshots
-documentation/ → Project notes
+## 📁 Repository Structure
+```text
+data/
+  HR_Attrition.csv
+sql/
+  01_raw.sql
+  02_staging.sql
+  03_dimensions.sql
+  04_fact.sql
+  05_kpis.sql
+  06_advanced_insights.sql
+powerbi/
+  screenshots/
+    executive_overview.png
+    department_attrition.png
+    jobrole_attrition.png
+README.md
 
 
 ---
