@@ -31,6 +31,8 @@ I wanted this project to reflect the real workflow of a data analyst supporting 
 ## 🏗️ Data Pipeline Design
 
 Each layer was designed deliberately so that business questions could be answered cleanly and reliably, similar to how data pipelines are structured in real analytics teams.
+## 🗺️ Data Model (EER Diagram)
+![EER Diagram](documentation/EERDiagram.png.mwb)
 
 **Raw Data → Cleaning & Feature Engineering → Dimensional Modeling → KPI Analysis**
 
