@@ -27,34 +27,22 @@ Each layer was designed deliberately so that business questions could be answere
 
 **Raw Data → Cleaning & Feature Engineering → Dimensional Modeling → KPI Analysis**
 
-
 ## 🚀 How to Run This Project (MySQL)
 
-### 1. Create the database
-Create a schema in MySQL called:hr_attrition
+### 1) Create the database
+Create a schema in MySQL called: `hr_attrition`
 
+### 2) Run scripts in order (top → bottom)
+1. **Load raw data:** [`sql/01_raw.sql`](sql/01_raw.sql)  
+   > If using `LOAD DATA LOCAL INFILE`, update the CSV path inside the file to match your machine.
+2. **Staging (cleaning + buckets):** [`sql/02_staging.sql`](sql/02_staging.sql)
+3. **Dimensions:** [`sql/03_dimensions.sql`](sql/03_dimensions.sql)
+4. **Fact table:** [`sql/04_fact.sql`](sql/04_fact.sql)
+5. **KPI queries:** [`sql/05_kpis.sql`](sql/05_kpis.sql)
+6. **Advanced insights:** [`sql/06_advanced_insights.sql`](sql/06_advanced_insights.sql)
 
-### 2. Load raw data
-Run:sql/01_raw.sql
-
-
-> If using `LOAD DATA LOCAL INFILE`, update the CSV path inside the file to match your local machine.
-
-### 3. Clean and prepare data (staging)
-sql/02_staging.sql
-
-### 4. Build dimension tables
-sql/03_dimensions.sql
-
-### 5. Build fact table
-sql/04_fact.sql
-
-### 6. Generate KPIs
-sql/05_kpis.sql
-
-
-### 7. Advanced analysis
-sql/06_advanced_insights.sql
+### 3) Dataset
+CSV is stored here: [`data/HR_Attrition.csv`](data/HR_Attrition.csv)
 
 ---
 
