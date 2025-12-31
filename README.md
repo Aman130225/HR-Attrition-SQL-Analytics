@@ -1,4 +1,11 @@
 # HR Attrition Analytics — SQL & Power BI Project
+## 🔎 Project Summary
+
+This project analyzes employee attrition using a full analytics workflow:
+data ingestion → transformation → dimensional modeling → KPI analysis → executive reporting.
+
+It identifies the key drivers of employee turnover and provides actionable insights
+to support HR decision-making and retention strategies.
 
 ## 👋 About This Project
 
@@ -56,6 +63,15 @@ CSV is stored here: [`data/HR_Attrition.csv`](data/HR_Attrition.csv)
 | Attrition without Overtime | **10.44%** |
 | Highest-Risk Tenure Group | **0–1 years (34.88%)** |
 
+## 💡 Business Impact
+
+The analysis highlights critical areas for intervention:
+- Improving working conditions for Sales teams could significantly reduce turnover.
+- Reducing excessive overtime may lower attrition by more than 20 percentage points.
+- Strengthening onboarding and mentorship for new hires can stabilize early-career retention.
+
+These insights provide HR leaders with a data-driven foundation for strategic workforce planning.
+
 
 ## ✅ What These Results Suggest
 - Attrition is concentrated in **Sales**, especially **Sales Representatives**.
@@ -108,7 +124,14 @@ README.md
 
 ## 🎯 Why I Built This
 
-I created this project to strengthen my data analytics skills and to demonstrate how data can be transformed into business-ready insights.  
+I created this project to strengthen my data analytics skills and to demonstrate how data can be transformed into business-ready insights.
+
+## 🧑‍💻 What I Learned
+
+- Building scalable SQL data pipelines
+- Designing dimensional models for analytics
+- Translating raw data into executive-level insights
+- Communicating technical results through business dashboards
 
 
 
